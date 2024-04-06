@@ -65,3 +65,17 @@ li.link:hover {
   transition: scale 500ms ease-out;
   cursor: pointer;
 }
+
+@media (max-width: 600px) {
+  div.banner {
+    font-size: 5rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  ul.links-group {
+    grid-template: repeat(4, 100px) / 100%;
+  }
+}
