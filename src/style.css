@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Anton;
+  src: url(../public/fonts/Anton-Regular.ttf);
+}
+
 :root {
   --dark-navy: #192a3c;
   --navy: #223546;
@@ -9,15 +14,23 @@
 
 body {
   background-color: var(--dark-navy);
-  overflow-y: hidden;
 }
 
-#app {
-  height: 100vh;
-  width: 100%;
+div.banner {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 10rem;
+  color: white;
+  font-family: Anton;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
 }
 
 .container {
@@ -29,7 +42,7 @@ ul.links-group {
   list-style: none;
   padding-inline-start: 0px;
   display: grid;
-  grid-template: repeat(4, 80px) / 400px;
+  grid-template: repeat(4, 100px) / 400px;
   gap: 20px;
   padding: 20px;
 }
@@ -41,4 +54,7 @@ li.link {
   background-color: var(--link-bg-color);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-family: Anton;
+  font-size: 2rem;
+  letter-spacing: 1px;
 }
