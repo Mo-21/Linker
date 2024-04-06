@@ -36,6 +36,7 @@ div.banner {
 .container {
   background-color: var(--green);
   border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 ul.links-group {
@@ -57,4 +58,10 @@ li.link {
   font-family: Anton;
   font-size: 2rem;
   letter-spacing: 1px;
+}
+
+li.link:hover {
+  scale: 1.5;
+  transition: scale 500ms ease-out;
+  cursor: pointer;
 }
