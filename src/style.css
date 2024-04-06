@@ -39,9 +39,37 @@ div.banner {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+div.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 1em;
+}
+
+div.name {
+  font-family: Anton;
+  color: var(--link-bg-color);
+  font-size: 2rem;
+}
+
+img.portrait {
+  width: 100px;
+  border-radius: 100%;
+}
+
+img.portrait:hover {
+  scale: 5;
+  cursor: pointer;
+  border: solid 2px var(--dark-navy);
+  transition: scale 200ms ease-out 200ms;
+}
+
 ul.links-group {
   list-style: none;
   padding-inline-start: 0px;
+  margin-block-start: 0;
   display: grid;
   grid-template: repeat(4, 100px) / 400px;
   gap: 20px;
