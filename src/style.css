@@ -61,9 +61,13 @@ li.link {
 }
 
 li.link:hover {
-  scale: 1.5;
-  transition: scale 500ms ease-out;
+  scale: 1.2;
+  transition: scale 100ms ease-out;
   cursor: pointer;
+}
+
+span.hyperlink {
+  visibility: hidden;
 }
 
 @media (max-width: 600px) {
