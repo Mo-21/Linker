@@ -46,7 +46,7 @@ div.info {
   align-items: center;
   gap: 5px;
   margin-top: 1em;
-  background-color: var(--navy);
+  background-color: var(--dark-green);
   padding: 4px;
 }
 
@@ -81,6 +81,7 @@ ul.links-group {
 li.link {
   display: flex;
   align-items: center;
+  gap: 10px;
   padding-inline: 10px;
   background-color: var(--link-bg-color);
   border-radius: 10px;
@@ -98,6 +99,16 @@ li.link:hover {
 
 span.hyperlink {
   display: none;
+}
+
+.hide-alert {
+  display: none;
+}
+
+.show-alert {
+  display: flex;
+  font-size: 1rem;
+  letter-spacing: 0px;
 }
 
 @media (max-width: 600px) {
